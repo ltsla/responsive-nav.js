@@ -22,7 +22,7 @@
 
 # Demos
 
-* [Accessible multi-level dropdown demo](http://foxnet.fi/responsive-nav/demos/multiple-levels/)
+* [Accessible multi-level dropdown demo](http://samikeijonen.github.io/responsive-nav.js/demos/multiple-levels/)
 * [Fixed positioned one page demo](http://www.adtile.me/fixed-nav/) using smooth scrolling. View source on GitHub: [adtile/fixed-nav](https://github.com/adtile/fixed-nav)
 * [Advanced demo](http://responsive-nav.com/demo/) (View the [source code](https://github.com/viljamis/responsive-nav.js/tree/master/demos/advanced-left-navigation))
 * [Official website](http://responsive-nav.com) (works as a demo, too!)
@@ -115,7 +115,7 @@ Following the steps below you will be able to get the plugin up and running. If 
 				resizeMobile: function () {
 					customToggle.setAttribute( 'aria-controls', 'nav' );
 				},
-				resize: function () {
+				resizeDesktop: function () {
 					customToggle.removeAttribute( 'aria-controls' );
 				},
 			});
@@ -145,7 +145,7 @@ Following the steps below you will be able to get the plugin up and running. If 
 			open: function(){},              // Function: Open callback
 			close: function(){}              // Function: Close callback
 			resizeMobile: function(){},      // Function: Resize callback for "mobile"     
-			resize: function(){}             // Function: Resize callback for "desktop"
+			resizeDesktop: function(){}      // Function: Resize callback for "desktop"
 		});
 	```
 
